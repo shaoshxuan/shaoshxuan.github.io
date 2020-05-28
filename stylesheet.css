@@ -6,8 +6,98 @@
 
 body {
     background-color: #1f2833;
+    overflow-y: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #131920;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #66fcf1;
+    border-radius: 6px;
+}
+
+/* Splash Screen */
+.splashScreen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f2833;
+    z-index: 200;
+    opacity: 100%;
+    transition: all 1s ease 0s;
+}
+
+.splashScreen.fadeOut {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f2833;
+    z-index: -10;
+    opacity: 0%;
+    transition: all 1s ease 0s;
+}
+
+#splashLogo {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -80px;
+    margin-top: -80px;
+    overflow: visible;
+    animation: fillLogo 2s ease forwards 5.5s;
+}
+
+#splashLogo path {
+    stroke-dashoffset: 2921.076904296875;
+    stroke-dasharray: 2921.076904296875;
+    animation: drawLines 10s ease-in-out forwards;
+}
+
+#theS {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -75px;
+    margin-top: -75px;
+    opacity: 0%;
+    animation: sAppear 3s ease forwards 5.5s;
+}
+
+@keyframes drawLines {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillLogo {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #66fcf1;
+        filter: drop-shadow(0 0 5px #66fcf1);
+    }
+}
+
+@keyframes sAppear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        filter: drop-shadow(0 0 5px #66fcf1);
+    }
+}
+
+
+/* Navigation Bar */
 .navBar {
     display: flex;
     height: 100px;
