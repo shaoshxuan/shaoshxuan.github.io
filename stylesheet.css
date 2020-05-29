@@ -58,13 +58,13 @@ body {
     margin-left: -80px;
     margin-top: -80px;
     overflow: visible;
-    animation: fillLogo 2s ease forwards 5.5s;
+    animation: fillLogo 2s ease forwards 4.2s;
 }
 
 #splashLogo path {
     stroke-dashoffset: 2921.076904296875;
     stroke-dasharray: 2921.076904296875;
-    animation: drawLines 10s ease-in-out forwards;
+    animation: drawLines 8s ease-in-out forwards;
 }
 
 #theS {
@@ -76,7 +76,7 @@ body {
     margin-left: -75px;
     margin-top: -75px;
     opacity: 0%;
-    animation: sAppear 3s ease forwards 5.5s;
+    animation: sAppear 3s ease forwards 4.2s;
 }
 
 @keyframes drawLines {
@@ -196,6 +196,12 @@ body {
     width: 100%;
     background-color: var(--bg-color);
     box-shadow: 0 0 50px var(--navBar-color);
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%,
 }
 
 /* constant styles */
