@@ -203,14 +203,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 30px;
-}
-
-.elevateSection {
-    box-shadow: 0 0 50px var(--navBar-color);
-}
-
-.sunkenSection {
-    margin-top: auto;
+    background-color: #1d232b;
 }
 
 /* constant styles */
@@ -226,7 +219,8 @@ body {
 hr {
     margin: auto;
     width: 50vw;
-    opacity: 50%;
+    opacity: 80%;
+    filter: drop-shadow(0 0 20px #66fcf1)
 }
 
 .subTitleText {
