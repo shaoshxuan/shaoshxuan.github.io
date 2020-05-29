@@ -15,7 +15,7 @@
 
 body {
     background-color: var(--bg-color);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -179,6 +179,27 @@ body {
     text-align: center;
 }
 
+.iconLinks i {
+    padding: 0 20px;
+    color: var(--bodyText-color);
+    opacity: 30%;
+    transition: all 0.3s ease 0s;
+}
+
+.iconLinks i:hover {
+    color: var(--title-color);
+    opacity: 80%;
+    filter: drop-shadow(0 0 5px var(--title-color))
+}
+
+.mainContent {
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 50px var(--navBar-color);
+}
+
+/* constant styles */
+
 .paraBreak {
     padding: 30px 0;
 }
@@ -207,17 +228,4 @@ body {
     color: var(--bodyText-color);
     font-size: 16px;
     font-weight: 300;
-}
-
-.iconLinks i {
-    padding: 0 20px;
-    color: var(--bodyText-color);
-    opacity: 30%;
-    transition: all 0.3s ease 0s;
-}
-
-.iconLinks i:hover {
-    color: var(--title-color);
-    opacity: 80%;
-    filter: drop-shadow(0 0 5px var(--title-color))
 }
