@@ -125,14 +125,14 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: all 0.5s ease 0s;
+    transition: all 0.8s ease 0s;
     padding: 15px 60px;
 }
 
 header.navFadeIn {
     padding: 5px 60px;
     background-color: var(--navBar-color);
-    box-shadow: 0 0 20px var(--navBar-color);
+    box-shadow: 0 0 20px var(--bodyText-color);
 }
 
 header.navFadeOut {
