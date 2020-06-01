@@ -240,7 +240,39 @@ header ul li a:hover {
 }
 
 .contactContent {
-    height: 500px;
+    padding: 150px 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mailIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.glowingArrow {
+    animation: pulseGlow 2s linear infinite;
+    color: var(--title-color);
+}
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 0 var(--title-color));
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--title-color));
+    }
+    80% {
+        filter: drop-shadow(0 0 10px var(--title-color));
+    }
+    100% {
+        filter: drop-shadow(0 0 0 var(--title-color));
+    }
 }
 
 .footerContent {
@@ -254,29 +286,20 @@ header ul li a:hover {
     padding: 50px;
 }
 
-.backToTop {
-    padding-top: 20px;
-}
-
-.footerContent .backToTop a {
-    color: var(--header-color);
-    font-size: 18px;
-    font-weight: 200;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
-
-.footerContent .backToTop a:hover {
-    color: var(--highlight-color);
-    font-size: 20px;
-    text-shadow: 0 0 10px var(--highlight-color);
-}
-
 .footerMe {
     padding-bottom: 20px;
     color: var(--highlight-color);
     font-size: 20px;
     font-weight: 300;
+}
+
+.credits {
+    padding-top: 40px;
+    color: var(--highlight-color);
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 0 10px var(--highlight-color);
 }
 
 /* constant styles */
