@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--bg-color);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 body[data-aos-delay='7500'] [data-aos],
@@ -177,7 +177,6 @@ header ul li a {
     transition: all 0.3s ease 0s;
 }
 
-
 header .logo img:hover {
     transform: rotate(-10deg) scale(1.1);
     filter: drop-shadow(0 0 2px var(--title-color));
@@ -242,6 +241,53 @@ header ul li a:hover {
     flex-direction: column;
     line-height: 30px;
     background-color: #1d232b;
+}
+
+.expSummary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.compLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    background-color: var(--bodyText-color);
+    border-radius: 10%;
+    transition: all 0.3s ease 0s;
+}
+
+.compLogo:hover {
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
+
+.overview {
+    padding-left: 20px;
+}
+
+.expHeader {
+    font-size: 24px;
+}
+
+.expRole {
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.expDate {
+    font-size: 14px;
+    color: #c5c6c7b3;
+}
+
+.expDesc {
+    color: var(--bodyText-color);
+    font-size: 18px;
 }
 
 .contactContent {
@@ -315,6 +361,10 @@ header ul li a:hover {
 
 .paraBreak {
     padding: 20px 0;
+}
+
+.descBreak {
+    padding: 5px 0;
 }
 
 hr {
