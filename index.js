@@ -27,9 +27,13 @@ window.addEventListener("scroll", function(){
     } else {
         header.classList = "";
     }
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-    navLinks.style.right = "-500px";
+    if (window.innerWidth < 1500){
+        menuBtn.classList.remove("open");
+        menuOpen = false;
+        navLinks.style.right = "-500px";
+    } else {
+        navLinks.style.right = "0";
+    }
 })
 
 // Hamburger Menu Animation

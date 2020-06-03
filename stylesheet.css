@@ -188,6 +188,10 @@ header ul li a:hover {
     text-shadow: 0 0 15px var(--title-color);
 }
 
+.onlyMobile {
+    display: none;
+}
+
 /* body content */
 .landing {
     width: 100%;
@@ -212,6 +216,10 @@ header ul li a:hover {
     width: inherit;
     align-items: center;
     text-align: center;
+}
+
+.landingIntro {
+    white-space: nowrap;
 }
 
 .iconLinks i {
@@ -505,6 +513,10 @@ hr {
 }
 
 @media all and (max-width: 1500px){
+    .onlyMobile {
+        display: block;
+    }
+
     .menuHamburger {
         width: 50px;
         height: 6px;
@@ -588,7 +600,7 @@ hr {
 }
 
 @media all and (max-width: 950px){
-    * {
+    .mainContent {
         text-align: center;
     }
 
@@ -609,6 +621,11 @@ hr {
         text-align: center;
         border: none;
     }
+
+    .projContainer:hover {
+        box-shadow: none;
+    }
+
     .projContainer.right {
         flex-direction: column;
         text-align: center;
