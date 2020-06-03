@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--bg-color);
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 body[data-aos-delay='7500'] [data-aos],
@@ -363,6 +363,22 @@ header ul li a:hover {
     font-size: 16px;
     color: var(--highlight-color);
     text-shadow: 0 0 10px var(--highlight-color);
+}
+
+.projLink a {
+    display: inline-block;
+    padding-top: 20px;
+    color: var(--bodyText-color);
+    opacity: 30%;
+    transition: all 0.3s ease 0s;
+}
+
+.projLink a:hover {
+    color: var(--title-color);
+    opacity: 80%;
+    filter: drop-shadow(0 0 5px var(--title-color));
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .contactContent {
