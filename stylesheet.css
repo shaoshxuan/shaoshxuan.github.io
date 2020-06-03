@@ -484,13 +484,12 @@ hr {
 .contactLink a {
     display: inline-block;
     text-decoration: none;
-    color: var(--header-color);
+    color: var(--highlight-color);
     font-size: 24px;
     transition: all 0.3s ease 0s;
 }
 
 .contactLink a:hover {
-    color: var(--title-color);
     text-shadow: 0 0 20px var(--bodyText-color);
 }
 
