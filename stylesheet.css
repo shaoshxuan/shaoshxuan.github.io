@@ -367,10 +367,18 @@ header ul li a:hover {
 }
 
 .projTech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
     font-size: 16px;
     color: var(--highlight-color);
     text-shadow: 0 0 10px var(--highlight-color);
+}
+
+.projTech>div {
+    padding: 0 10px;
 }
 
 .projLink a {
@@ -592,6 +600,10 @@ hr {
         text-align: left;
     }
 
+    .projTech {
+        justify-content: flex-start;
+    }
+
     .contentDesc.right {
         padding: 0;
     }
@@ -600,8 +612,29 @@ hr {
 }
 
 @media all and (max-width: 950px){
+    .headerParaBreak {
+        padding: 20px 0;
+    }
+    
+    .paraBreak  {
+        padding: 20px 0;
+    }
+
     .mainContent {
         text-align: center;
+        padding: 0 2px;
+    }
+
+    header .logo img {
+        width: 75px;
+    }
+
+    .landingContent {
+        padding: 120px 5px 60px 5px;
+    }
+
+    .sectionContent {
+        padding: 100px 10px;
     }
 
     .expSummary {
@@ -632,8 +665,14 @@ hr {
     }
 
     .projImg img {
-        width: 50vw;
+        width: 80vw;
         height: auto;
+    }
+
+    .projTech {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .overlayContent {
@@ -643,5 +682,9 @@ hr {
 
     .projTech, .iconLinks {
         white-space: nowrap;
+    }
+
+    .footerMe {
+        font-size: 16px;
     }
 }
