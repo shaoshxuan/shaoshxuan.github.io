@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--bg-color);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 body[data-aos-delay='7500'] [data-aos],
@@ -481,6 +481,19 @@ hr {
     font-size: 20px;
 }
 
+.contactLink a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--header-color);
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
+}
+
+.contactLink a:hover {
+    color: var(--title-color);
+    text-shadow: 0 0 20px var(--bodyText-color);
+}
+
 .highlightBodyText {
     color: var(--highlight-color);
     font-size: 24px;
@@ -490,4 +503,66 @@ hr {
     color: var(--bodyText-color);
     font-size: 16px;
     font-weight: 300;
+}
+
+@media all and (max-width: 1500px){
+    .projContainer {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .projContainer.right {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .overview {
+        padding-left: 0;
+    }
+
+    .contentDesc.right {
+        padding: 0;
+    }
+
+
+}
+
+@media all and (max-width: 950px){
+    * {
+        text-align: center;
+    }
+
+    .expSummary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+    }
+    .projContainer.right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projImg img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .overlayContent {
+        width: 50vw;
+        height: 25vw;
+    }
+
+    .projTech, .iconLinks {
+        white-space: nowrap;
+    }
 }
