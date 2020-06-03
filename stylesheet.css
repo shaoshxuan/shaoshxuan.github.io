@@ -684,6 +684,10 @@ hr {
         white-space: nowrap;
     }
 
+    .contactContent {
+        padding: 100px 10px;
+    }
+
     .footerContent {
         padding: 50px 10px;
     }
