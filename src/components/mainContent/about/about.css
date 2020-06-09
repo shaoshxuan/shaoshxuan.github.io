@@ -1,0 +1,54 @@
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.shaoDP img {
+    width: 15rem;
+}
+
+.shaoDesc {
+    width: 40vw;
+}
+
+.shaoSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.languages {
+    color: var(--landingBackgroundColor);
+}
+
+.frameworks {
+    color: var(--contrastColor);
+}
+
+@media all and (max-width: 950px) {
+    .shaoDesc {
+        width: 65vw;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .shaoDesc {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,37 @@
+.section {
+    width: 100%;
+}
+
+.sectionPadding {
+    padding: 10rem 2rem;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.headerBreak {
+    padding: 2rem 0;
+}
+
+.bodyBreak {
+    padding: 0.6rem 0;
+}
+
+.subBodyBreak {
+    padding: 0.3rem 0;
+}
+
+.bodyText {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.subHeader {
+    color: var(--headerColor);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}

@@ -1,0 +1,126 @@
+.workExp {
+    background-color: var(--backgroundColorAlt);
+}
+
+.experiences {
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media all and (max-width: 1300px){
+    .experiences {
+        padding: 0 8vw;
+    }
+}
+
+.workExperience {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.workLogoSummary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.compLogo {
+    width: 11.52rem;
+    height: 6.48rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.compLogo:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px var(--headerColor);
+}
+
+.compLogo img {
+    width: 80%;
+}
+
+.workSummary{
+    padding: 0.5rem 2rem;
+    height: 6.48rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.companyName {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--navBarColor);
+}
+
+.workRole {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--contrastColor);
+}
+
+.workPeriod {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--headerColor);
+}
+
+.workDesc {
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media all and (max-width: 815px){
+    .experiences {
+        padding: 0 5vw;
+        align-items: center;
+    }
+
+    .workExperience {
+        text-align: center;
+    }
+
+    .workExperience, .workSummary {
+        align-items: center;
+    }
+
+    .workLogoSummary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 580px){
+    .companyName {
+        font-size: 1rem;
+    }
+
+    .workRole {
+        font-size: 0.8rem;
+    }
+
+    .workPeriod {
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 400px){
+    .experiences {
+        padding: 0 1vw;
+    }
+}
