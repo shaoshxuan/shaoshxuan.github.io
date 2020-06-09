@@ -123,7 +123,6 @@
     width: 50%;
     max-width: 25em;
     opacity: 0%;
-    fill: transparent;
     animation: logoAppear 2s ease 3s forwards;
 }
 
