@@ -1,2 +1,2 @@
 # shaoshxuan_website
- My Junior Developer Portfolio website, made with ReactJS, Javascript, JSX and CSS3!
+Development repository for my Junior Developer portfolio website, made with ReactJS, Javascript, JSX and CSS3!
