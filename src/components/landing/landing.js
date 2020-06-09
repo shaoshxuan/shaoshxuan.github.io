@@ -91,7 +91,6 @@ class Landing extends React.Component {
                         <a href="#about"><FontAwesomeIcon icon={['fas', 'angle-double-down']} /></a>
                     </div>
                 </div>
-                <div className="sepBar"></div>
             </div>
         )
     }

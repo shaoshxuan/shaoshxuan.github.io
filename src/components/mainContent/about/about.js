@@ -4,7 +4,7 @@ import './about.css';
 class About extends React.Component {
     render() {
         return (
-            <div className="section sectionPadding" id="about">
+            <div className="about sectionPadding" id="about">
                 <div className="header">
                     <span style={{ color: 'var(--headerColor)' }}>&lt;</span> About Me <span style={{ color: 'var(--headerColor)' }}>/&gt;</span>
                 </div>

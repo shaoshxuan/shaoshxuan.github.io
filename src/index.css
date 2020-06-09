@@ -10,7 +10,7 @@
     --contrastColor: #e41376;
     --highlightColor: #fcbf49;
 
-    font-size: 16px;
+    font-size: 15px;
 }
 
 ::-webkit-scrollbar {
@@ -33,7 +33,10 @@ body {
     margin: 0;
     padding: 0;
     min-width: 300px;
-    overflow-y: hidden;
+}
+
+.content {
+    display: none;
 }
 
 .landingBreak {

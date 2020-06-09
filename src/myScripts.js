@@ -1,9 +1,11 @@
 // Fade Out Splash Screen
 document.addEventListener("DOMContentLoaded", () => {
     const splash = document.querySelector(".splashScreen");
+    const content = document.querySelector(".content");
+    console.log(content);
     setTimeout(() => {
+        content.style.display = "block";
         splash.classList.add("fadeBack");
-        document.getElementsByTagName("body")[0].style.overflowY = "visible";
     }, 5000);
 });
 
@@ -44,11 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-// refreshing page bring user back to top //
-window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
-}
-
 window.onload = () => {
-    window.history.pushState({}, document.title, "/#home");
+    window.history.pushState({}, document.title, "/");
 }

@@ -17,9 +17,11 @@ class MyWebsite extends React.Component {
                     <NavBar />
                 </header>
                 <Landing/>
-                <MainContent />
-                <Contact />
-                <Footer />
+                <div className="content">
+                    <MainContent />
+                    <Contact />
+                    <Footer />
+                </div>
             </div>
         )
     }
