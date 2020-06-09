@@ -14,12 +14,6 @@
     height: inherit;
 }
 
-@media all and (max-width: 480px) {
-    .particles {
-        display: none;
-    }
-}
-
 .introContainer {
     padding: 2em;
     width: inherit;
