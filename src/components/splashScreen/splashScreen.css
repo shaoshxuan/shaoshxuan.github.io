@@ -111,7 +111,7 @@
     }
     to {
         fill: #66fcf1;
-        /* filter: drop-shadow(0 0 10px #66fcf1); */
+        filter: drop-shadow(0 0 5px #66fcf1);
     }
 }
 
@@ -122,13 +122,13 @@
     transform: translate(-50%, -50%);
     width: 50%;
     max-width: 25em;
-    opacity: 0%;
+    opacity: 50%;
     animation: logoAppear 2s ease 3s forwards;
 }
 
 @keyframes logoAppear {
     to {
-        opacity: 20%;
+        opacity: 10%;
         fill: #45a29e;
     }
 }
