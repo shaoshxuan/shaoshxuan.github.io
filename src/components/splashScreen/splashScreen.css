@@ -121,19 +121,13 @@
     transform: translate(-50%, -50%);
     width: 50%;
     max-width: 25em;
-}
-
-#shaoIcon path {
+    opacity: 0%;
     animation: logoAppear 2s ease 3s forwards;
 }
 
 @keyframes logoAppear {
-    from {
-        opacity: 0%;
-        fill: transparent;
-    }
     to {
-        opacity: 50%;
+        opacity: 10%;
         fill: #45a29e;
     }
 }

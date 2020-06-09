@@ -21,7 +21,7 @@ class Projects extends React.Component {
                                         <div className="projLink">
                                             {data.projURL.length > 0
                                                 ? <a href={data.projURL} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fas', 'link']} /></a>
-                                                : <a href={undefined} className="privateIP">IP Privated</a>
+                                                : <a href={false} className="privateIP">IP Privated</a>
                                             }
                                             
                                         </div>
