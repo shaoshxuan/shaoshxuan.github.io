@@ -49,7 +49,7 @@
         "projType": "Static Website",
         "projDesc": ["My 1st ever portfolio/ resume website. I decided to embark on building a website from scratch as a side project during the Summer of 2020, to sharpen UI design and my frontend skills.",
                     "This will also be a platform to post other upcoming projects I have planned to develop with other languages and framework I aim to pickup over the long break."],
-        "techUsed": ["[ ReactJS ]", "[ Javascript ]", "[ HTML5 ]", "[ CSS3 ]"],
+        "techUsed": ["[ ReactJS ]", "[ Javascript ]", "[ JSX ]", "[ CSS3 ]"],
         "gitLink": "https://github.com/shaoshxuan/ShaoShxuan_Website"
     }
 ]
