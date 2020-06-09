@@ -35,3 +35,13 @@
     font-weight: 500;
     line-height: 1.2rem;
 }
+
+@media all and (min-width: 2048px){
+    .sectionPadding {
+        padding: 10rem 5vw;
+    }
+
+    .twoKContainer {
+        width: 40vw;
+    }
+}

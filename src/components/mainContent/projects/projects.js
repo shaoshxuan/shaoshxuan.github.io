@@ -16,7 +16,7 @@ class Projects extends React.Component {
                         return (
                             <div key={index}>
                                 <div className="landingBreak"></div>
-                                <div className="projectsDone">
+                                <div className="projectsDone twoKContainer">
                                     <div className="projectImg">
                                         <div className="projLink">
                                             {data.projURL.length > 0
