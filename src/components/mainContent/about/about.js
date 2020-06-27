@@ -19,35 +19,6 @@ const About = () => {
                         HELLO WORLD!<br/>
                         SO, WHO AM I?
                     </div>
-<<<<<<< Updated upstream
-                    <div className="landingBreak"></div>
-                    <div className="shaoSkillsInfo">
-                        <span className="subHeader">
-                            Familiar Languages and Frameworks
-                        </span>
-                        <div className="bodyBreak"></div>
-                        <div className="shaoSkills">
-                            <div className="skills languages">
-                                <div>[ Javascript ]</div>
-                                <div>[ HTML5 ]</div>
-                                <div>[ CSS3 ]</div>
-                                <div>[ jQuery ]</div>
-                                <div>[ Dart ]</div>
-                                <div>[ Python3 ]</div>
-                                <div>[ Php ]</div>
-                                <div>[ MySQL ]</div>
-                                <div>[ Java ]</div>
-                            </div>
-                            <div className="bodyBreak"></div>
-                            <div className="skills frameworks">
-                                <div>[ ReactJS ]</div>
-                                <div>[ Flutter ]</div>
-                                <div>[ GatsbyJS ]</div>
-                                <div>[ VueJS ]</div>
-                                <div>[ Flask ]</div>
-                            </div>
-                        </div>
-=======
                     <div className="aboutMeContent">
                         I am Shao Shxuan, an aspiring Front-End Developer. Currently an undergraduate located in Singapore, pursuing a double major in <span style={{ color: "#e41376", fontWeight: "600" }}>Software Development</span> and <span style={{ color: "#e41376", fontWeight: "600" }}>Cyber Security</span>.<br/>
                         Constantly researching and learning new technologies to improve myself, I believe what I'm doing is an <span style={{ color: "#e41376", fontWeight: "600" }}>art</span>. From problem solving to design and development, creativity is key!
@@ -75,7 +46,6 @@ const About = () => {
                                 </div>
                             )
                         })}
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
