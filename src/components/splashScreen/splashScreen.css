@@ -114,6 +114,10 @@
   z-index: -10;
 }
 
+.splashScreen.displayNone {
+  display: none;
+}
+
 .splashScreen {
   position: absolute;
   width: 100%;

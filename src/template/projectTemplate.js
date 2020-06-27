@@ -65,7 +65,7 @@ const ProjectTemplate = (props) => {
                         <div className="projDesc">
                             <div dangerouslySetInnerHTML={{ __html: (propsCleaned.description.description).split("\n").join("<div class='paraBreak'></div>")}}></div>
                         </div>
-                        {propsCleaned.projectLink === null 
+                        {propsCleaned.projectLink === "null" || null
                             ? ""
                             :   <>
                                 <div className="constantBreak"></div>

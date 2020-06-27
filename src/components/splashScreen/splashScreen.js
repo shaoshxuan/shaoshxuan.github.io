@@ -10,6 +10,7 @@ class SplashScreen extends React.Component {
     }
 
     componentDidMount() {
+        console.log(window.sessionStorage.getItem('splashScreen'))
         if (window.sessionStorage.getItem('splashScreen') == null){
             window.sessionStorage.setItem('splashScreen', "set");
             setTimeout(
@@ -23,7 +24,7 @@ class SplashScreen extends React.Component {
             );
         } else {
             this.setState({
-                splashScreenClass: "splashScreen fade",
+                splashScreenClass: "splashScreen displayNone",
             });
         }
     }

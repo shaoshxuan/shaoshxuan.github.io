@@ -105,11 +105,6 @@
   }
 }
 
-.splashScreen {
-  opacity: 1;
-  z-index: 200;
-}
-
 .block {
   display: none;
 }
