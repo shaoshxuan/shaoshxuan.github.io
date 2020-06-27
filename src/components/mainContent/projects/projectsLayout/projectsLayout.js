@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./ProjectsLayout.css";
+import "./projectsLayout.css";
 
 const ProjectsLayout = (props) => {
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from 'gatsby';
 import PageLayout from '../components/pageLayout/pageLayout.js';
 import Head from '../components/head.js';
-import "./ProjectTemplate.css";
+import "./projectTemplate.css";
 
 export const query = graphql`
     query (
