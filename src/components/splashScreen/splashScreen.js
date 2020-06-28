@@ -10,9 +10,8 @@ class SplashScreen extends React.Component {
     }
 
     componentDidMount() {
-        console.log(window.sessionStorage.getItem('splashScreen'))
         if (window.sessionStorage.getItem('splashScreen') == null){
-            window.sessionStorage.setItem('splashScreen', "set");
+            window.sessionStorage.setItem('splashScreen', "splashScreenCompleted");
             setTimeout(
                 function() {
                     this.setState({

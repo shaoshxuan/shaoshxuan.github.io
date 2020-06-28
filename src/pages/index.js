@@ -16,17 +16,23 @@ class IndexPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            contentClass: "block",
+            contentClass: false,
         }
+
+        this.handleLoad = this.handleLoad.bind(this);
     }
 
     componentDidMount() {
-        if (window.sessionStorage.getItem('splashScreen') == null){
-            window.sessionStorage.setItem('splashScreen', "set");
+        this.handleLoad();
+    }
+
+    handleLoad = () => {
+        if (window.sessionStorage.getItem('showLanding') == null){
+            window.sessionStorage.setItem('showLanding', "landindOnly");
             setTimeout(
                 function() {
                     this.setState({
-                        contentClass: "",
+                        contentClass: true,
                     });
                 }
                 .bind(this),
@@ -34,7 +40,7 @@ class IndexPage extends React.Component {
             );
         } else {
             this.setState({
-                contentClass: "",
+                contentClass: true,
             });
         }
     }
@@ -45,11 +51,15 @@ class IndexPage extends React.Component {
                 <Head title="Home"/>
                 <SplashScreen />
                 <Landing />
-                <div className={this.state.contentClass}>
-                    <PageLayout>
-                        <MainContent />
-                    </PageLayout>
-                </div>
+                {this.state.contentClass
+                    ?   <PageLayout>
+                            <MainContent />
+                        </PageLayout>
+                    :   <>
+                        </>
+                }
+                    
+                
             </>
         )
     }

@@ -106,6 +106,6 @@
 }
 
 .block {
-  display: none;
+  display: none !important;
 }
 /*# sourceMappingURL=index.css.map */
