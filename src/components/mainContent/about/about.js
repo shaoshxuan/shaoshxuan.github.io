@@ -20,7 +20,7 @@ const About = () => {
                         SO, WHO AM I?
                     </div>
                     <div className="aboutMeContent">
-                        I am Shao Shxuan, an aspiring Front-End Developer. Currently an undergraduate located in Singapore, pursuing a double major in <span style={{ color: "#e41376", fontWeight: "600" }}>Software Development</span> and <span style={{ color: "#e41376", fontWeight: "600" }}>Cyber Security</span>.<br/>
+                        I am Shao Shxuan, an aspiring Fullstack Developer. Currently an undergraduate located in Singapore, pursuing a double major in <span style={{ color: "#e41376", fontWeight: "600" }}>Software Development</span> and <span style={{ color: "#e41376", fontWeight: "600" }}>Cyber Security</span>.<br/>
                         Constantly researching and learning new technologies to improve myself, I believe what I'm doing is an <span style={{ color: "#e41376", fontWeight: "600" }}>art</span>. From problem solving to design and development, creativity is key!
                     </div>
                     <div className="constantBreak"></div>
